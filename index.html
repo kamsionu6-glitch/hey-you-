@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hey, you ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="fx"></div><canvas id="cf"></canvas>
+
+<section class="scr on" id="s0"><div class="in">
+<h1>Hey, you. <span class="beat">❤️</span></h1>
+<p>I made something just for you.</p>
+<p style="font-size:1rem">Who is this for? (optional)</p>
+<input id="nm" placeholder="Their name" maxlength="30" autocomplete="off"><br>
+<button class="btn" onclick="start()">Begin →</button>
+</div></section>
+
+<section class="scr" id="s1"><div class="in">
+<h2>💌 Why I made this</h2>
+<p class="fade" style="animation-delay:.6s">I could have just asked you normally…</p>
+<p class="fade" style="animation-delay:2s">but you’re not someone I wanted to ask normally.</p>
+<p class="fade" style="animation-delay:3.4s">So I made something you’ll hopefully remember.</p>
+<button class="btn fade" style="animation-delay:4.6s" onclick="go('s2')">Keep going ♡</button>
+</div></section>
+
+<section class="scr" id="s2"><div class="in">
+<h2>🦋 Things I like about you</h2>
+<div class="card"><b>Your smile</b><span>It gets me every single time.</span></div>
+<div class="card"><b>Your personality</b><span>You make ordinary moments feel different.</span></div>
+<div class="card"><b>The way you talk</b><span>I could listen longer than I probably should.</span></div>
+<div class="card"><b>You</b><span>Honestly, I could keep going forever.</span></div>
+<button id="b2" class="btn hide" onclick="go('s3')">Next ♡</button>
+</div></section>
+
+<section class="scr" id="s3"><div class="in">
+<h2>🎮 One tiny game first</h2>
+<div id="lives" style="font-size:1.6rem;margin-bottom:10px"></div>
+<div id="qa"><p id="q"></p><div class="opts" id="opts"></div></div>
+<div id="rv" class="hide"><p class="big" id="rt"></p><p id="ra"></p><button class="btn" id="nx" onclick="nextQ()">Next →</button></div>
+</div></section>
+
+<section class="scr" id="s4"><div class="in">
+<p class="fade" style="animation-delay:.5s">There are people you meet…</p>
+<p class="fade" style="animation-delay:2.2s">and somehow they become part of your favorite moments.</p>
+<p class="fade" style="animation-delay:4s">You’re becoming that person for me.</p>
+<p class="fade" style="animation-delay:5.8s">So… I have one question.</p>
+<button class="btn fade" style="animation-delay:7s" onclick="go('s5')">Ask me →</button>
+</div></section>
+
+<section class="scr" id="s5"><div class="in">
+<div style="font-size:4.5rem" class="beat">❤️</div>
+<h1 class="big"><span class="nmt"></span>Will you be my girlfriend?</h1>
+<p>I can’t promise I’ll always know what to say, but I can promise I’ll always have a reason to make you smile.</p>
+<button class="btn" onclick="yes()">💗 Yes</button>
+<button class="btn ghost" id="no" onclick="go('s6')">🥺 Let me think</button>
+</div></section>
+
+<section class="scr" id="s6"><div class="in">
+<h2>Of course. Take your time ❤️</h2>
+<p>No pressure. I just wanted you to know how I feel.</p>
+<button class="btn ghost" onclick="go('s5')">I’m back 💗</button>
+</div></section>
+
+<section class="scr" id="s7"><div class="in">
+<h1 class="big">She said yes?! 😭❤️</h1>
+<p class="big beat">It’s us now.</p>
+<p style="font-size:1.6rem">Chapter One: Us 💕</p>
+<p>To be continued…</p>
+</div></section>
+
+<script src="script.js"></script></body></html>
